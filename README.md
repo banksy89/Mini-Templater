@@ -1,10 +1,12 @@
 <h1>The Template Class</h1>
 
+<hr>
+
 <h2>Background Story: </h2>
 <p>So I decided I wanted to remove all PHP from any view I use. The only bit of PHP I ever have in a view is the occasional IF/ELSE Statement or a Foreach Loop.</p>
 <p>I looked into Smarty, tried it but then thought - nah it's too much and funky stuff started happening when trying to include it in my Framework. So I decided I would just start writing my own one!</p>
 
-<hr>
+
 
 <h2>What this does: </h2>
 
