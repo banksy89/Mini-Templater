@@ -223,7 +223,7 @@
 					  array ( 'title' => 'hellooooo', 'name' => 'Ashley Banks' ),
 					  array ( 'title' => 'gooodbbye', 'name' => 'Bradley Few' ),
 					  array ( 'title' => 'monkey', 'name' => 'Arjun' ),
-					  array ( 'title' => 'fuck', 'name' => 'Chicken man' )
+					  array ( 'title' => 'test', 'name' => 'Chicken man' )
 				   );
 				   
 	$tags['results'] = $array;
