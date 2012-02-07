@@ -229,7 +229,7 @@ class Templater {
 	$array = array ( 
 					  array ( 'title' => 'hellooooo', 'name' => 'Ashley Banks' ),
 					  array ( 'title' => 'gooodbbye', 'name' => 'Bradley Few' ),
-					  array ( 'title' => 'monkey', 'name' => 'Arjun' ),
+					  array ( 'title' => 'monkey', 'name' => 'asd' ),
 					  array ( 'title' => 'test', 'name' => 'Chicken man' )
 				   );
 				   
