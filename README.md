@@ -23,7 +23,7 @@
 </code>
 <p><strong>Foreach Tags</strong></p>
 <p><i>Foreach loops are based on associative arrays within an array ( two dimensional ).</i><br>
-Example: <code>array ( array ( 'name' => 'Ashley Banks' ), array ( 'name' => 'Banana man' ) )</code>
+Example: <code>array ( array ( 'name' => 'Ashley Banks' ), array ( 'name' => 'Banana man' ) )</code></p>
 <code>
   [FOREACH banana as b]
     <p>My name is: [b.name]</p>
