@@ -2,19 +2,31 @@
 
 <hr>
 
-<h2>Background Story: </h2>
-<p>So I decided I wanted to remove all PHP from any view I use. The only bit of PHP I ever have in a view is the occasional IF/ELSE Statement or a Foreach Loop.</p>
-<p>I looked into Smarty, tried it but then thought - nah it's too much and funky stuff started happening when trying to include it in my Framework. So I decided I would just start writing my own one!</p>
+<h2>Brief: </h2>
+<p>This is the templating class I have been working on and had working practise with in a few recent project - it's no where near perfect but doing the job so far.</p>
 
-
-
-<h2>What this does: </h2>
-
-<p>This template class relies on [ ] tags - I moved away from the 'Mustache' style because Mustache and Smarty both use these.</p>
-<p>The main thing this does at the moment is allow a foreach loop tag to be in the view - by a provided array.</p>
-
-<p>For ease: I have included at the bottom of the class just a simple Demo of how to use it. I'll keep this as it's own repo for now - and then update my Framework to include this template handler.</p>
-
+<p>The templating is based on [ ] brackets - although I am looking to move them too something less generic like {% %}</p>
+<p>Setting up tags to replace just set an array for example: $tags and call each key the tag you want to replace -> <code>$tags['name'] = 'Ashley'</code></p>
 <hr>
 
-<p>This is just the beginning - in total I have probably spent over a couple of hours on it. So IT IS NOT PERFECT!</p>
+<h3>Example usage: </h3>
+<p><strong>Standard Tags</strong></p>
+<code>
+  [BANANA]
+</code>
+<p><strong>Conditional Tags</strong></p>
+<p><i>conditional statements are reliant on whether the variable is set to TRUE.</i></p>
+<code>
+  [IF SHOW_BANANA]
+    <p>I am only shown if show_banana is true</p>
+  [/ENDIF SHOW_BANANA]
+</code>
+<p><strong>Foreach Tags</strong></p>
+<p><i>Foreach loops are based on associative arrays within an array ( two dimensional ).</i><br>
+Example: <code>array ( array ( 'name' => 'Ashley Banks' ), array ( 'name' => 'Banana man' ) )</code>
+<code>
+  [FOREACH banana as b]
+    <p>My name is: [b.name]</p>
+  [/banana FOREACH]
+</code>
+
